@@ -1,0 +1,20 @@
+#include "StdAfx.h"
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{ 
+	string line1,line2,lineMax,lineLonger;
+	cin>>line1;
+	cin>>line2;
+	    if(line1>=line2)
+	        lineMax=line1;
+	    else  lineMax=line2;	
+      if(line1.size()>=line2.size())
+	        lineLonger=line1;
+	    else  
+          lineLonger=line2;
+		cout<<lineLonger<<endl;
+		cout<<lineMax<<'\n';
+ return 0;
+}
