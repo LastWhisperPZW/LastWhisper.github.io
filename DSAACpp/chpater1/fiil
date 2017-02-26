@@ -1,0 +1,24 @@
+#include "stdafx.h"
+#include<iostream>
+
+using namespace std;
+
+template<class Ta>
+int num(Ta a[],Ta value,int n)
+{
+	int i;
+	for (i=0;i<n;i++)
+	{
+		a[i] = value;
+	}
+	return 0;
+}
+
+
+int main()
+{
+	char a[] = { 'a','b','c','d','c','c','c','u'};
+	num(a, 't', 8);
+	for(auto s:a)
+	cout << s << endl;
+}
