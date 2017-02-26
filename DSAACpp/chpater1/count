@@ -1,0 +1,23 @@
+#include "stdafx.h"
+#include<iostream>
+
+using namespace std;
+
+template<class Ta>
+int count(Ta a[],Ta value,int n)
+{
+	int ctr = 0,i;
+	for (i=0;i<n;i++)
+	{
+		if (a[i] == value)
+			ctr++;
+	}
+	return ctr;
+}
+
+
+int main()
+{
+	char a[] = { 'a','b','c','d','c','c','c','u'};
+	cout << num(a, 'c',8) << endl;
+}
